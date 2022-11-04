@@ -1,49 +1,51 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const links = [
     {
       id: 1,
-      Link: "Home",
-      url: "",
+      _Link: "Home",
+      name: "",
     },
     {
       id: 2,
-      Link: "Events",
-      url: "",
+      _Link: "Events",
+      name: "",
     },
     {
       id: 3,
-      Link: "project",
-      url: "",
+      _Link: "project",
+      name: "project",
     },
     {
       id: 4,
-      Link: "About",
-      url: "",
+      _Link: "About",
+      name: "about",
     },
     {
       id: 5,
-      Link: "contact",
-      url: "",
+      _Link: "contact",
+      name: "",
     },
   ];
 
   return (
-    <div className=" flex justify-between items-center w-full h-20 px-4 text-white ">
+    <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-[#141414] ">
       <div className="w-20 mt-[15px] ">
         <h1 className="  text-3xl font-bold ml-[-2] text-[#00df9a]">RNXG</h1>
       </div>
       <ul className="hidden md:flex hover:cursor-zoom-out">
-        {links.map(({ id, Link, url }) => (
-          <li
-            key={id}
-            className="px-4 cursor-pointer uppercase text-gray-500 hover:scale-105 hover:text-[#00df9a]"
-          >
-            <a href={url}>{Link}</a>
-          </li>
+        {links.map(({ id, _Link, name }) => (
+          <Link to={name} smooth duration={500}>
+            <li
+              key={id}
+              className="px-4 cursor-pointer uppercase text-gray-500 hover:scale-105 hover:text-[#00df9a]"
+            >
+              {_Link}
+            </li>
+          </Link>
         ))}
       </ul>
       <div
@@ -57,14 +59,16 @@ const NavBar = () => {
         )}
       </div>
       {nav && (
-        <ul className="flex flex-col text-1xl justify-center items-center absolute top-0 left-0 w-full h-screen">
-          {links.map(({ id, Link, url }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer  py-6 text-gray-500 uppercase hover:text-[#00df9a]"
-            >
-              <a href={url}>{Link}</a>
-            </li>
+        <ul className="flex flex-col text-1xl  items-center absolute top-0 left-0 w-full h-screen bg-[#141414] justify-evenly ">
+          {links.map(({ id, _Link, name }) => (
+            <Link to={name} smooth duration={500}>
+              <li
+                key={id}
+                className="px-4 cursor-pointer uppercase text-gray-500 hover:scale-105 hover:text-[#00df9a]"
+              >
+                {_Link}
+              </li>
+            </Link>
           ))}
         </ul>
       )}
