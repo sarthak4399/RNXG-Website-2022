@@ -6,15 +6,15 @@ const About = () => {
       <h1 className="text-4xl text-center text-[#00df9a]" name="about">
         Who Are We ?
       </h1>
-      <p className=" text-gray-500 py-4 text-xl text-center mx-auto">
+      <p className=" text-gray-400 py-4 text-xl text-center mx-auto justify-center px-[100px]">
         We're a bunch of young people trying to solve as many problems as
         possible for college students and giving them an optimum, all-in-one
         platform for their overall growth.
       </p>
       {/* {card_container} */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-2  gap-4 md:grid-cols-2 shadow-cyan-400 ">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-2  gap-4 md:grid-cols-2 px-5 py-5 ">
         {/* {card} */}
-        <div className="flex flex-col border rounded-3xl text-left py-12 px-8 ring-1 ring-[#00df9a] ring-offset-0">
+        <div className="flex flex-col border rounded-3xl text-left py-12 px-8 ring-1 ring-[#00df9a] ring-offset-0 ">
           <div>
             <div className="bg-[#00df9a] inline-flex p-2 rounded-full ">
               <GiStairsGoal size={40} />
@@ -31,7 +31,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col  border rounded-3xl text-left py-12 px-8 ring-1 ring-[#00df9a] ring-offset-0 ">
+        <div className="flex flex-col  border rounded-3xl text-left py-12 px-8 ring-1 ring-[#00df9a] ring-offset-0 p-4">
           <div>
             <div className="bg-[#00df9a] inline-flex p-2 rounded-full ">
               <GiTargetShot size={40} />
