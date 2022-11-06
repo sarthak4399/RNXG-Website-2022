@@ -12,7 +12,7 @@ const NavBar = () => {
     {
       id: 2,
       _Link: "Events",
-      name: "",
+      name: "event",
     },
     {
       id: 3,
@@ -32,16 +32,18 @@ const NavBar = () => {
   ];
 
   return (
-    <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-[#141414] ">
+    <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-[#141414]">
       <div className="w-20 mt-[15px] ">
-        <h1 className="  text-3xl font-bold ml-[-2] text-[#00df9a]">RNXG</h1>
+        <h1 className="  text-3xl font-bold ml-[-2] text-[#00df9a] shadow-slate-800">
+          RNXG
+        </h1>
       </div>
       <ul className="hidden md:flex hover:cursor-zoom-out">
         {links.map(({ id, _Link, name }) => (
           <Link to={name} smooth duration={500}>
             <li
               key={id}
-              className="px-4 cursor-pointer uppercase text-gray-500 hover:scale-105 hover:text-[#00df9a]"
+              className="px-4 cursor-pointer uppercase text-gray-500 hover:scale-105 hover:text-[#00df9a] hover:bg-slate-900 hover:rounded-sm"
             >
               {_Link}
             </li>

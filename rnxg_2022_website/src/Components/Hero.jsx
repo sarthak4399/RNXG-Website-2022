@@ -2,10 +2,10 @@ import React from "react";
 import Typed from "react-typed";
 import { BiRightArrow } from "react-icons/bi";
 import { Link } from "react-scroll";
-
+// import Hero from "../Assets/hero-glow.svg";
 const Home = () => {
   return (
-    <div name="home" className="h-screen w-full bg-[#141414] ">
+    <div name="home" className="h-screen w-full   bg-[#141414] ">
       <div className="max-w-screen-lg mx-auto flex flrx-col py-[25%] justify-centre  h-full px-4 ">
         <div className="flex flex-col justify-center">
           <h2 className=" text-4xl sm:text-7xl font-bold text-[#00df9a] underline">
@@ -13,13 +13,14 @@ const Home = () => {
             RNXG ?
           </h2>
           <Typed
-            className="md:text-2xl sm:textxl text uppercase text-[#00df9a] "
+            className="md:text-2xl sm:textxl text uppercase text-[#00df9a]"
             strings={["FOR STUDENTS ", ".......💻", " .......🔩"]}
             typeSpeed={100}
             backSpeed={90}
             loop
           />
-          <p className=" max-w-[800px] mt-[-1rem] w-full h-screen mx-auto text-left-10 flex flex-col justify-center text-gray-300 text-2xl font-bold py-5">
+
+          <p className=" max-w-[800px] mt-[-1rem] w-full h-screen mx-auto text-left-10 flex flex-col justify-center text-gray-300  font-bold py-5 md:text-sm sm:text-sm lg:text-lg ">
             Members of the RNXG, regardless of their fields, collaborate as a
             team to generate multidisciplinary technical expertise. Robotics for
             Next Generation, or RNXG, is the greatest platform for working on
@@ -28,7 +29,7 @@ const Home = () => {
             Systems, IoT, VLSI, Robotics, and other emerging technologies are
             explored in RNXG.
           </p>
-          <div>
+          <div className="mt-[-50px]">
             <Link
               to="Explore"
               smooth

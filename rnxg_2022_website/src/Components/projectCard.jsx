@@ -9,7 +9,7 @@ const projectCard = (props) => {
             <img src={props.src} alt="" />
           </div>
           <h3 className="font-bold  text-[#00df9a] px-2">Our Vision !</h3>
-          <p className=" text-gray-500 text-s mx-2 text-left">{props.text}</p>
+          <p className=" text-gray-200 text-s mx-2 text-left">{props.text}</p>
         </div>
       </div>
     </div>

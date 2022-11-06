@@ -3,10 +3,13 @@ import { GiTargetShot, GiStairsGoal } from "react-icons/gi";
 const About = () => {
   return (
     <div className=" text-center  max-W-[1240px] mx-auto py-16  bg-[#141414] ">
-      <h1 className="text-4xl text-center text-[#00df9a]" name="about">
+      <h1
+        className="text-4xl text-center text-[#00df9a] underline"
+        name="about"
+      >
         Who Are We ?
       </h1>
-      <p className=" text-gray-400 py-4 text-xl text-center mx-auto justify-center px-[100px]">
+      <p className=" text-gray-200 py-4 text-xl text-center mx-auto justify-center px-[100px]">
         We're a bunch of young people trying to solve as many problems as
         possible for college students and giving them an optimum, all-in-one
         platform for their overall growth.
@@ -23,7 +26,7 @@ const About = () => {
               {" "}
               Our Mission !
             </h3>
-            <p className=" text-gray-500 font-semibold">
+            <p className=" text-gray-200 font-semibold">
               To increase enthusiasm & knowledge towards robotics by providing
               hands-on & multidisciplinary collaborative experience in
               mechanics, electronics, designing & programming, with all
@@ -39,7 +42,7 @@ const About = () => {
             <h3 className="text-xl font-bold py-4 text-[#00df9a]">
               Our Vision !
             </h3>
-            <p className=" text-gray-500 font-semibold">
+            <p className=" text-gray-200 font-semibold">
               We provide an open platform for students in the institute who wish
               to advance in the technological world. We integrate technology to
               tackle real-world challenges.
@@ -54,7 +57,7 @@ const About = () => {
             <h3 className="text-xl font-bold py-4 text-[#00df9a]">
               Our Vision !
             </h3>
-            <p className=" text-gray-500 font-semibold">
+            <p className=" text-gray-200 font-semibold">
               We provide an open platform for students in the institute who wish
               to advance in the technological world. We integrate technology to
               tackle real-world challenges.
@@ -69,7 +72,7 @@ const About = () => {
             <h3 className="text-xl font-bold py-4 text-[#00df9a]">
               Our Vision !
             </h3>
-            <p className=" text-gray-500 font-semibold">
+            <p className=" text-gray-200 font-semibold">
               We provide an open platform for students in the institute who wish
               to advance in the technological world. We integrate technology to
               tackle real-world challenges.

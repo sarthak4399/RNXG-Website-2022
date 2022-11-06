@@ -4,7 +4,7 @@ import LedCube from "../Assets/ledcube.png";
 import Pcb from "../Assets/pcb.jpg";
 const Project = () => {
   return (
-    <div className=" bg-[#141414]" name="project">
+    <div className="bg-[#141414]" name="project">
       <div className="flex flex-row px-4 ">
         <h1 className="font-bold text-4xl md: text-white  px-4 animate-bounce ">
           RNXG <h1 className="text-[#00df9a]"> PROJECT'S</h1>
@@ -19,8 +19,7 @@ const Project = () => {
           </p>
         </p>
       </div>
-
-      <div className="grid sm:grid-cols-1 lg:grid-cols-4  gap-4 md:grid-cols-4 justify-center  px-[10px]">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-4  gap-2 md:grid-cols-4 justify-center px-4 gap-x-[-20px]">
         <ProjectCard
           id={1}
           src={LedCube}
