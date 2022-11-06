@@ -34,5 +34,4 @@ const Event = () => {
     </div>
   );
 };
-
 export default Event;
