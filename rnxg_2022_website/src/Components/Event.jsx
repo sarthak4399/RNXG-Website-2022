@@ -21,15 +21,15 @@ const Event = () => {
           </p>
         </div>
         {/* {card event} */}
-        <div className="py-6 ">
-          <EventCard
-            id={1}
-            src={Rmageddon}
-            text={
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vitae fugiat, minima sequi cupiditate, at eveniet soluta dolor nesciuntvelit corrupti atque vel labore nostrum iste, voluptas vero!Molestiae, sit?"
-            }
-          />
-        </div>
+      </div>
+      <div className="py-6 md:px-[40%] lg:px-[40%] ">
+        <EventCard
+          id={1}
+          src={Rmageddon}
+          text={
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vitae fugiat, minima sequi cupiditate, at eveniet soluta dolor nesciuntvelit corrupti atque vel labore nostrum iste, voluptas vero!Molestiae, sit?"
+          }
+        />
       </div>
     </div>
   );

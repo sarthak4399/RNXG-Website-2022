@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 // import Hero from "../Assets/hero-glow.svg";
 const Home = () => {
   return (
-    <div name="home" className="h-screen w-full   bg-[#141414] ">
+    <div name="home" className="h-screen w-full bg-[#141414]">
       <div className="max-w-screen-lg mx-auto flex flrx-col py-[25%] justify-centre  h-full px-4 ">
         <div className="flex flex-col justify-center">
           <h2 className=" text-4xl sm:text-7xl font-bold text-[#00df9a] underline">

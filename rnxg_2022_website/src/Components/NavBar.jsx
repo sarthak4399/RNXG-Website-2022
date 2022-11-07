@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { MdDarkMode } from "react-icons/md";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const links = [
@@ -50,6 +51,7 @@ const NavBar = () => {
           </Link>
         ))}
       </ul>
+      <MdDarkMode className="rounded-2xl md:mr-[10px] inline " size={30} />
       <div
         onClick={() => setNav(!nav)}
         className="cursor-pointer text-gray-500 pr-4 z-10 md:hidden "
