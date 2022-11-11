@@ -19,7 +19,7 @@ const Project = () => {
           </p>
         </p>
       </div>
-      <div className="grid sm:grid-cols-1 lg:grid-cols-4  gap-2 md:grid-cols-4 justify-center px-4 gap-x-[-20px]">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-3  gap-2 md:grid-cols-3  gap-x-10 gap-y-10 justify-center px-[100px] py-10 ">
         <ProjectCard
           id={1}
           src={LedCube}
@@ -64,6 +64,13 @@ const Project = () => {
         />
         <ProjectCard
           id={7}
+          src={Pcb}
+          text={
+            "Battery Management System For LIPO(Battery) Kshitij Kiran Sagar , Shruti Sunil Kulkarni, Komal Ankush Kuntewad"
+          }
+        />
+        <ProjectCard
+          id={8}
           src={Pcb}
           text={
             "Battery Management System For LIPO(Battery) Kshitij Kiran Sagar , Shruti Sunil Kulkarni, Komal Ankush Kuntewad"
